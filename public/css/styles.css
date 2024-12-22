@@ -1,0 +1,127 @@
+﻿/* 基础样式 */
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+#api-key-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#api-key-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#save-key-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 侧边栏样式 */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow: auto;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+#session-name-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#create-session-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#session-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#session-list div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* 聊天界面 */
+#chat-container {
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 220px; /* Offset for sidebar */
+}
+
+/* 输入区域 */
+#input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 消息样式 */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    clear: both;
+}
+
+.user-message {
+    background-color: #e9ecef;
+    margin-left: 30%;
+    float: right;
+}
+
+.ai-message {
+    background-color: #f8f9fa;
+    margin-right: 30%;
+    float: left;
+} 
